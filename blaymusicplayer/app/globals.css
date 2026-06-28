@@ -1,12 +1,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --cor-tema: #89d6d9;
+}
+/* Configurações do modo escuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111111;
+    --foreground: #ededed;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    color-scheme: dark;
   }
 }
 
@@ -42,8 +49,3 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
