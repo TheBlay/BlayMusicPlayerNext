@@ -7,10 +7,14 @@ const fastify = Fastify({ logger: true });
 // Configuração do Swagger
 fastify.register(swagger, {
   swagger: {
-    info: {
-      title: 'API Example',
-      description: 'Documentação da API com Fastify + Swagger',
-      version: '1.0.0'
+    info: { // Descreve o projeto que o Swagger documenta
+      title: 'Blay Music Player API',
+      description: 'Documentação da API do Blay Music Player',
+      version: '1.0.0',
+      contact: {
+    name: 'Henrique Blay Barboza',
+    email: 'henriblay12@gmail.com'
+  }
     },
     host: 'localhost:3000',
     schemes: ['http'],
